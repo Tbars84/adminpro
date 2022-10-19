@@ -6,10 +6,12 @@ import { PagesModule } from './pages/pages.module';
 
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NopagefoundComponent
   ],
   imports: [
     BrowserModule,
