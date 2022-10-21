@@ -1,1 +1,32 @@
-<p>progress works!</p>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <ng-container *ngFor="let prgoressBar of percentages">
+          <!-- Progress 1-->
+          <h4 class="card-title">{{prgoressBar.label}}</h4>
+          <div class="progress m-t-20">
+            <div class="progress-bar {{prgoressBar.type}} progress-bar-striped" aria-valuenow="85" aria-valuemin="0"
+              aria-valuemax="100" style="height:8px;"
+              [style.width]="getPercent(prgoressBar)"
+              role="progressbar"> <span class="sr-only"> Complete
+                (success)</span> </div>
+          </div>
+          <hr>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <ng-container *ngFor="let prgoressBarCtrl of percentages; index as i;">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{prgoressBarCtrl.label}} controller</h4>
+          <app-increment [progressObj]="prgoressBarCtrl" [index]="i" (percentProgress)="changePercent($event)"></app-increment>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
