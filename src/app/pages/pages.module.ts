@@ -10,6 +10,7 @@ import { PagesComponent } from './pages.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { IncrementComponent } from './components/increment/increment.component';
+import { GraphicsComponent } from './components/graphics/graphics.component';
 
 
 
@@ -19,7 +20,8 @@ import { IncrementComponent } from './components/increment/increment.component';
     DashboardComponent,
     Grafica1Component,
     ProgressComponent,
-    IncrementComponent
+    IncrementComponent,
+    GraphicsComponent
   ],
   imports: [
     CommonModule,
