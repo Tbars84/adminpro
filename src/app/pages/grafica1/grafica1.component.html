@@ -1,1 +1,13 @@
-<p>grafica1 works!</p>
+
+
+<div class="row">
+  <ng-container *ngFor="let donutData of donutsData" >
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <app-graphics [donutData]="donutData"></app-graphics>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
