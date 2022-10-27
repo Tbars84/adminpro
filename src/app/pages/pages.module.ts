@@ -11,6 +11,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { IncrementComponent } from './components/increment/increment.component';
 import { GraphicsComponent } from './components/graphics/graphics.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -21,7 +22,8 @@ import { GraphicsComponent } from './components/graphics/graphics.component';
     Grafica1Component,
     ProgressComponent,
     IncrementComponent,
-    GraphicsComponent
+    GraphicsComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { GraphicsComponent } from './components/graphics/graphics.component';
     PagesComponent,
     DashboardComponent,
     Grafica1Component,
-    ProgressComponent
+    ProgressComponent,
+    AccountSettingsComponent
   ]
 })
 export class PagesModule { }
