@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { IncrementComponent } from './components/increment/increment.component';
 import { GraphicsComponent } from './components/graphics/graphics.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -23,7 +24,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
     ProgressComponent,
     IncrementComponent,
     GraphicsComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,

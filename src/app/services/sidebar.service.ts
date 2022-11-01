@@ -11,7 +11,8 @@ export class SidebarService {
       expandedMenu: [
         {label: 'Main' , route: ''},
         {label: 'Progress' , route: 'progress'},
-        {label: 'Graphics' , route: 'graphics'}
+        {label: 'Graphics' , route: 'graphics'},
+        { label: 'Rxjs', route: 'rxjs' },
       ]
     }
   ]
